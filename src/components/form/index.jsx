@@ -11,7 +11,7 @@ export default function Form(props) {
 
   const { formData, setFormData, clearState } = props;
 
-  const { data, isFetching } = useQuery(["@cursos"], getCursos, {
+  const { data } = useQuery(["@cursos"], getCursos, {
     refetchOnWindowFocus: false,
   });
 
