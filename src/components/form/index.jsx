@@ -11,7 +11,7 @@ export default function Form(props) {
 
   const { formData, setFormData, clearState } = props;
 
-  const { data } = useQuery(["@cursos"], getCursos, {
+  const { data, isFetching } = useQuery(["@cursos"], getCursos, {
     refetchOnWindowFocus: false,
   });
 
@@ -83,7 +83,7 @@ export default function Form(props) {
         }
       >
         <option hidden>Selecione um curso</option>
-        {data.cursos.map((curso, idx) => (
+        {data?.cursos.map((curso, idx) => (
           <option value={curso.name} key={idx}>
             {curso.name}
           </option>
