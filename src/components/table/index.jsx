@@ -97,7 +97,7 @@ export default function Table(props) {
                     setIsOpen(true);
                     setAlunoSelecionado(aluno);
                   }}
-                  className="text-whittransition m-1 rounded-md bg-danger p-1 text-xs font-normal text-white delay-100 ease-out hover:bg-red-950"
+                  className="m-1 rounded-md bg-danger p-1 text-xs font-normal text-white transition delay-100 ease-out hover:bg-red-950"
                 >
                   Excluir
                 </button>
