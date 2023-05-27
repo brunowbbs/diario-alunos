@@ -113,7 +113,7 @@ export default function Table(props) {
       >
         <div>
           <h1 className="mb-2 font-poppins">Confirmar Exclusão</h1>
-          <p className="mb-8 font-poppins">
+          <p className="mb-8 font-poppins font-light">
             Desejar excluir o aluno {alunoSelecionado.nome}?
           </p>
 
@@ -123,7 +123,7 @@ export default function Table(props) {
                 apagarAluno(alunoSelecionado._id);
                 setIsOpen(false);
               }}
-              className=" m-1 rounded-md bg-sucess px-4 py-2 font-poppins text-xs font-normal text-white transition delay-100 ease-out hover:bg-green-950"
+              className=" m-1 rounded-md bg-sucess px-4 py-2 font-poppins text-xs font-light text-white transition delay-100 ease-out hover:bg-green-950"
             >
               Sim
             </button>
@@ -131,7 +131,7 @@ export default function Table(props) {
               onClick={() => {
                 setIsOpen(false);
               }}
-              className="text-whittransition m-1 rounded-md bg-danger px-4 py-2 font-poppins text-xs font-normal text-white delay-100 ease-out hover:bg-red-950"
+              className="text-whittransition m-1 rounded-md bg-danger px-4 py-2 font-poppins text-xs font-light text-white delay-100 ease-out hover:bg-red-950"
             >
               Não
             </button>
