@@ -15,11 +15,7 @@ export default function Form(props) {
     refetchOnWindowFocus: false,
   });
 
-  const {
-    mutate,
-    error,
-    isLoading: loadingSave,
-  } = useMutation(saveAluno, {
+  const { mutate, isLoading: loadingSave } = useMutation(saveAluno, {
     onSuccess: () => {
       toast.success("salvo com sucesso");
       queryClient.invalidateQueries(["@alunos"]);
