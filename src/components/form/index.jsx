@@ -110,7 +110,7 @@ export default function Form(props) {
         }
       />
       <button
-        className="h-8 rounded-md bg-blue-600 px-8 text-white"
+        className="h-8 rounded-md bg-blue-600 px-8 text-white transition delay-100 ease-out hover:bg-blue-900"
         onClick={formData.id ? edit : save}
       >
         Salvar
