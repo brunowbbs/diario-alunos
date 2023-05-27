@@ -59,14 +59,6 @@ export default function Form(props) {
     clearState();
   }
 
-  if (error) {
-    return <h3>Erro ao salvar aluno...</h3>;
-  }
-
-  if (isFetching) {
-    return <h2>carregando...</h2>;
-  }
-
   return (
     <div className="flex justify-between gap-8">
       <input
